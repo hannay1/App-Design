@@ -1,0 +1,49 @@
+<html>
+  <body bgcolor="#009999">
+    <div align="center">
+      <h3> Enter fields and press submit to add them to the database</h3>
+      <form action="/first_form" method="get">
+      <input type="text" name="timemdt" value="timeudt here">TimeMDT</input>
+      <br>
+      <input type="text" name="tempf" value="temperature here">Temp</input>
+      <br>
+       <input type="text" name="dewpoint" value="dewpoint here">dewpoint</input>
+      <br>
+      <input type="text" name="humidity" value="humidity here">humitidy</input>
+      <br>
+      <input type="text" name="pressure" value="pressure here">pressure</input>
+      <br>
+      <input type="text" name="visibility" value="visibility here">visibility</input>
+      <br>
+       <input type="text" name="windir" value="windir here">windir</input>
+      <br>
+       <input type="text" name="windspeed" value="windspeed here">windspeed</input>
+      <br>
+       <input type="text" name="gustspeed" value="gustspeed here">gustspeed</input>
+      <br>
+       <input type="text" name="precipitation" value="precipitation here">precipitation</input>
+      <br>
+       <input type="text" name="events" value="events here">events</input>
+      <br>
+       <input type="text" name="conditions" value="conditions here">conditions</input>
+      <br>
+       <input type="text" name="winddegrees" value="windegrees here">winddegrees</input>
+      <br>
+       <input type="text" name="dateutc" value="dateutc here">DateUTC</input>
+      <br>
+      <input type="submit"></input>
+    </form>
+    <form action="/second_form" method="get">
+      <h4> Enter the number for hours you want to search for: </h4>
+      <p> Beware of bug : as we have a database of strings, 12 is smaller than 2. </p>
+        <p>This may result in some odd times being retrieved. </p>
+      <p>  I tried using parseInt(); it did not work when trying to compare values when getting times. </p>
+      <p> It may be possible to re-write the csv file so it only contains military times for TimeMDT so as to mitigate the issue. </p>
+      <input type="number" name="min_time" value="enter mintime here">min</input>
+      <br>
+      <input type="number" name="max_time" value="enter maxtime here">max</input>
+      <br>
+      <input type="submit"></input>
+  </div>
+  </body>
+</html>
